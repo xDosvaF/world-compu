@@ -127,4 +127,15 @@
     .contact-layout {
         flex-direction: column;
     }
+    .cards-grid{
+        display: none;
+    }
+    .prueba{
+        display: none;
+    }
+}
+@media (min-width: 769px) {
+    #carouselExampleCaptions{
+        display: none;
+    }
 }
