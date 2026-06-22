@@ -26,7 +26,7 @@
     font-weight: bold;
 }
 
-/* Grid genérico para tarjetas (valores, servicios) */
+/* Grid tarjetas */
 .cards-grid {
     display: flex;
     flex-wrap: wrap;
