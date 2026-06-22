@@ -66,19 +66,24 @@
     font-weight: bold;
 }
 
-/* =========================================================
-   SERVICE-CARD — usado en servicios.html
-   ========================================================= */
+/* SERVICE-CARD — usado en servicios.html */
 .service-card {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 260px;
     border-radius: 20px;
-    padding: 28px;
+    padding: 0;
     background: var(--color-white);
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
     border-bottom: 3px solid var(--color-primary);
+}
+
+.card-grid__content{
+    display: flex;
+    flex-direction: column;
+    padding: 0 28px 14px;
+    gap: 4px;
 }
 
 .service-card__icon {
