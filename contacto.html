@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | World Compu</title>
+    <link rel="shortcut icon" href="https://www.worldcompu.com/wp-content/uploads/2017/04/fa-e1491341105455.png">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layouts/nav.css">
+    <link rel="stylesheet" href="css/layouts/header.css">
+    <link rel="stylesheet" href="css/layouts/main.css">
+    <link rel="stylesheet" href="css/layouts/footer.css">
+    <link rel="stylesheet" href="css/objetos/buttons-style.css">
+    <link rel="stylesheet" href="css/objetos/card-valores.css">
+</head>
+
+<body>
+    <nav class="site-nav">
+        <img class="site-nav__logo" src="img/logo-world-compu.svg" alt="World Compu">
+
+        <button class="site-nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <div class="site-nav__links">
+            <a class="site-nav__link" href="index.html">Inicio</a>
+            <a class="site-nav__link" href="quienes-somos.html">¿Quiénes somos?</a>
+            <a class="site-nav__link" href="servicios.html">Servicios</a>
+            <a class="site-nav__link is-active" href="contacto.html">Contacto</a>
+        </div>
+
+        <div class="site-nav__contact">
+            <p class="site-nav__phone">(502) 5192-1221</p>
+            <a class="primary-button" href="tel:+50251921221">Llamar</a>
+        </div>
+    </nav>
+
+    <header class="site-hero">
+        <div class="site-hero__title">
+            <h1 class="site-hero__title-h1">Contáctanos</h1>
+            <p class="site-hero__description">
+                Escríbenos y con gusto te ayudamos a encontrar la solución publicitaria o
+                tecnológica que tu negocio necesita.
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section section--bg-light">
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <div class="contact-info__item">
+                        <p class="contact-info__label">Teléfono</p>
+                        <p>(502) 5192-1221</p>
+                    </div>
+                    <div class="contact-info__item">
+                        <p class="contact-info__label">Correo</p>
+                        <p>contacto@worldcompu.com</p>
+                    </div>
+                    <div class="contact-info__item">
+                        <p class="contact-info__label">Ubicación</p>
+                        <p>Santa Elena, Petén, Guatemala</p>
+                    </div>
+                    <div class="contact-info__item">
+                        <p class="contact-info__label">Horario</p>
+                        <p>Lunes a viernes, 8:00 a.m. – 6:00 p.m.</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="#" method="post">
+                    <div class="contact-form__field">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="contact-form__field">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                    </div>
+                    <div class="contact-form__field">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="(502) 0000-0000">
+                    </div>
+                    <div class="contact-form__field">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos qué necesitas" required></textarea>
+                    </div>
+                    <button class="primary-button" type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section section--bg-lighter">
+            <div class="section__title">
+                <p class="text-eyebrow">CONTÁCTANOS</p>
+                <h2 class="section__title-h2">Encuéntranos en <br> Santa Elena, Petén</h2>
+            </div>
+
+            <iframe class="map-frame"
+                title="Ubicación de World Compu Impresión en Google Maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5024.844026444749!2d-89.8998022!3d16.920743700000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5f8ccefbe56023%3A0x63978d7a2e7b2339!2sWorldCompu%20Impresion!5e1!3m2!1ses!2sgt!4v1781820561329!5m2!1ses!2sgt"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 World Compu Impresión</p>
+        <div class="site-footer__links">
+            <a class="site-footer__link" href="index.html">Inicio</a>
+            <a class="site-footer__link" href="quienes-somos.html">¿Quiénes somos?</a>
+            <a class="site-footer__link" href="servicios.html">Servicios</a>
+            <a class="site-footer__link" href="contacto.html">Contacto</a>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+:root {
+    /* Paleta de marca */
+    --color-primary: #D6097D;
+    --color-primary-soft: #d6097d6b;
+    --color-bg-light: #E6EEFA;
+    --color-bg-lighter: #EDF3FC;
+    --color-dark: #1a0b12;
+    --color-white: #ffffff;
+    --color-text: #1a1a1a;
+
+    /* Tipografía */
+    --font-base: 'Segoe UI', Roboto, sans-serif;
+
+    /* Espaciados */
+    --gap-sm: 12px;
+    --gap-md: 22px;
+    --gap-lg: 45px;
+
+    /* Layout */
+    --max-content-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-base);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--color-text);
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    font-family: var(--font-base);
+}
+
+/* Accesibilidad: foco visible para navegación por teclado */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* Respeta a usuarios que prefieren reducir animaciones */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Utilidad reutilizable para el texto rosado destacado (antes inline style) */
+.text-eyebrow {
+    color: var(--color-primary);
+    font-weight: bold;
+    letter-spacing: 0.04em;
+}

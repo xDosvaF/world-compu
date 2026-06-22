@@ -1,0 +1,133 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: var(--gap-lg) clamp(20px, 6vw, 60px);
+    gap: var(--gap-md);
+}
+
+.section--bg-light {
+    background-color: var(--color-bg-light);
+}
+
+.section--bg-lighter {
+    background-color: var(--color-bg-lighter);
+}
+
+.section__title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 65ch;
+}
+
+.section__title-h2 {
+    font-size: clamp(26px, 4vw, 33px);
+    font-weight: bold;
+}
+
+/* Grid genérico para tarjetas (valores, servicios) */
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+}
+
+/* =========================================================
+   GOOGLE MAPS
+   ========================================================= */
+.map-frame {
+    width: 100%;
+    height: 400px;
+    border: 0;
+    border-radius: 12px;
+}
+
+/* =========================================================
+   FORMULARIO DE CONTACTO
+   ========================================================= */
+.contact-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    min-width: 260px;
+    flex: 1;
+}
+
+.contact-info__item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contact-info__label {
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    background: var(--color-white);
+    border-radius: 18px;
+    padding: 28px;
+    flex: 2;
+    min-width: 280px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contact-form__field label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.contact-form__field input,
+.contact-form__field textarea {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 15px;
+}
+
+.contact-form__field input:focus,
+.contact-form__field textarea:focus {
+    outline: 2px solid var(--color-primary);
+}
+
+/* =========================================================
+   CTA genérico (sección final invitando a contactar)
+   ========================================================= */
+.cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 50px 24px;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+@media (max-width: 700px) {
+    .contact-layout {
+        flex-direction: column;
+    }
+}

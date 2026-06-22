@@ -1,0 +1,101 @@
+.value-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    border-bottom: 3px solid var(--color-primary);
+    width: 250px;
+    gap: 10px;
+    padding: 25px 28px;
+    background: var(--color-white);
+}
+
+.value-card__icon {
+    display: flex;
+    background-color: var(--color-primary-soft);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.value-card__title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Modificador: tarjeta destacada y más alta (misión/visión/valores extendidas) */
+.value-card--featured {
+    border-bottom-width: 6px;
+    width: 275px;
+    min-height: 320px;
+    justify-content: flex-start;
+    letter-spacing: 0.03em;
+    line-height: 1.5em;
+}
+
+.value-card--featured .value-card__eyebrow {
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Modificador: tarjeta compacta con ícono + título en fila (grid de 8 valores) */
+.value-card--row {
+    width: 220px;
+}
+
+.value-card__title-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.value-card__title-row img {
+    height: 35px;
+}
+
+.value-card__title-row p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* =========================================================
+   SERVICE-CARD — usado en servicios.html
+   ========================================================= */
+.service-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 260px;
+    border-radius: 20px;
+    padding: 28px;
+    background: var(--color-white);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid var(--color-primary);
+}
+
+.service-card__icon {
+    font-size: 32px;
+}
+
+.service-card__title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    .value-card,
+    .service-card,
+    .value-card--featured,
+    .value-card--row {
+        width: 100%;
+        max-width: 320px;
+    }
+}

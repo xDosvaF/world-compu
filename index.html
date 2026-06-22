@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Compu | Un mundo de color</title>
+    <link rel="shortcut icon" href="https://www.worldcompu.com/wp-content/uploads/2017/04/fa-e1491341105455.png">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layouts/nav.css">
+    <link rel="stylesheet" href="css/layouts/header.css">
+    <link rel="stylesheet" href="css/layouts/main.css">
+    <link rel="stylesheet" href="css/layouts/footer.css">
+    <link rel="stylesheet" href="css/objetos/buttons-style.css">
+    <link rel="stylesheet" href="css/objetos/card-valores.css">
+</head>
+
+<body>
+    <nav class="site-nav">
+        <img class="site-nav__logo" src="img/logo-world-compu.svg" alt="World Compu">
+
+        <button class="site-nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <div class="site-nav__links">
+            <a class="site-nav__link is-active" href="index.html">Inicio</a>
+            <a class="site-nav__link" href="quienes-somos.html">¿Quiénes somos?</a>
+            <a class="site-nav__link" href="servicios.html">Servicios</a>
+            <a class="site-nav__link" href="contacto.html">Contacto</a>
+        </div>
+
+        <div class="site-nav__contact">
+            <p class="site-nav__phone">(502) 5192-1221</p>
+            <a class="primary-button" id="btn-contacto" href="contacto.html">Contacto</a>
+        </div>
+    </nav>
+
+    <header class="site-hero">
+        <div class="site-hero__title">
+            <h1 class="site-hero__title-h1">UN MUNDO <br> DE COLOR</h1>
+            <p class="site-hero__description">
+                Soluciones tecnológicas y publicitarias para empresas, corporaciones y personas
+                en Petén, Guatemala.
+            </p>
+        </div>
+
+        <div class="site-hero__actions">
+            <a class="primary-button" href="servicios.html">Ver Servicios</a>
+            <a class="second-button" href="contacto.html">Contáctanos</a>
+        </div>
+
+        <div class="site-hero__tags">
+            <span class="transparent-button">🖼️ Gran Formato</span>
+            <span class="transparent-button">🎨 Diseño</span>
+            <span class="transparent-button">📣 Publicidad</span>
+        </div>
+    </header>
+
+    <section class="site-stats" aria-label="Estadísticas de la empresa">
+        <div class="site-stats__item">
+            <p class="site-stats__number">+500</p>
+            <p>CLIENTES</p>
+        </div>
+        <div class="site-stats__item">
+            <p class="site-stats__number">+10</p>
+            <p>AÑOS ACTIVOS</p>
+        </div>
+        <div class="site-stats__item">
+            <p class="site-stats__number">+20</p>
+            <p>SERVICIOS</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="section section--bg-light">
+            <div class="section__title">
+                <p class="text-eyebrow">¿QUIÉNES SOMOS?</p>
+                <h2 class="section__title-h2">Líderes en diseño y publicidad</h2>
+                <p>
+                    Brindamos servicios de manera efectiva, cultivando una amistad basada en
+                    confianza y eficiencia en Petén, Guatemala.
+                </p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="value-card">
+                    <div class="value-card__icon">🎯</div>
+                    <p class="value-card__title">Misión</p>
+                    <p>Ser el centro de soluciones en el área publicitaria para toda la región.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-card__icon">🔭</div>
+                    <p class="value-card__title">Visión</p>
+                    <p>Confianza, eficiencia, creatividad y compromiso con cada cliente.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-card__icon">💎</div>
+                    <p class="value-card__title">Valores</p>
+                    <p>Honestidad, integridad y responsabilidad en cada proyecto que realizamos.</p>
+                </div>
+            </div>
+
+            <a class="third-button" href="quienes-somos.html">Conoce más sobre nosotros →</a>
+        </section>
+
+        <section class="section section--bg-lighter">
+            <div class="section__title">
+                <p class="text-eyebrow">CONTÁCTANOS</p>
+                <h2 class="section__title-h2">Encuéntranos en <br> Santa Elena, Petén</h2>
+            </div>
+
+            <iframe class="map-frame"
+                title="Ubicación de World Compu Impresión en Google Maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5024.844026444749!2d-89.8998022!3d16.920743700000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5f8ccefbe56023%3A0x63978d7a2e7b2339!2sWorldCompu%20Impresion!5e1!3m2!1ses!2sgt!4v1781820561329!5m2!1ses!2sgt"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 World Compu Impresión</p>
+        <div class="site-footer__links">
+            <a class="site-footer__link" href="index.html">Inicio</a>
+            <a class="site-footer__link" href="quienes-somos.html">¿Quiénes somos?</a>
+            <a class="site-footer__link" href="servicios.html">Servicios</a>
+            <a class="site-footer__link" href="contacto.html">Contacto</a>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>

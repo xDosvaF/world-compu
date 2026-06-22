@@ -1,0 +1,63 @@
+.primary-button,
+.second-button,
+.transparent-button,
+.third-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 15px 20px;
+    border-style: none;
+    backdrop-filter: blur(8px);
+    filter: drop-shadow(2px 3px 0 0 rgba(0, 0, 0, 0.027));
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.primary-button:hover,
+.second-button:hover,
+.transparent-button:hover,
+.third-button:hover {
+    transform: translateY(-1px);
+    opacity: 0.92;
+}
+
+/* Botón principal: fondo blanco, texto rosa */
+.primary-button {
+    background: var(--color-white);
+    border-top: 1px solid rgba(253, 120, 224, 0.377);
+    border-left: 1px solid rgba(253, 120, 224, 0.377);
+    color: var(--color-primary);
+}
+
+/* Botón secundario: contorno blanco sobre fondo rosa */
+.second-button {
+    background: rgba(255, 255, 255, 0.027);
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+}
+
+/* Botón transparente: usado en chips/etiquetas de servicios */
+.transparent-button {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+    width: fit-content;
+}
+
+/* Botón terciario: sólido rosa, usado como CTA dentro del contenido */
+.third-button {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    width: fit-content;
+}
+
+@media (max-width: 600px) {
+    .site-hero__actions .primary-button,
+    .site-hero__actions .second-button {
+        flex: 1;
+        text-align: center;
+    }
+}

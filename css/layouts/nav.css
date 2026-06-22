@@ -1,0 +1,113 @@
+.site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-primary);
+    padding: 16px 36px;
+    flex-wrap: wrap;
+    gap: 12px;
+    position: relative;
+    z-index: 50;
+}
+
+.site-nav__logo {
+    height: 50px;
+}
+
+.site-nav__links {
+    display: flex;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(253, 120, 224, 0.377);
+    border-left: 1px solid rgba(253, 120, 224, 0.377);
+    filter: drop-shadow(2px 3px 0 0 rgba(0, 0, 0, 0.027));
+    padding: 12px;
+    gap: 16px;
+}
+
+.site-nav__link {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 15px;
+    padding: 4px 6px;
+    border-radius: 6px;
+    transition: opacity 0.2s ease;
+}
+
+.site-nav__link:hover {
+    opacity: 0.75;
+}
+
+.site-nav__link.is-active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.site-nav__contact {
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    gap: 16px;
+}
+
+.site-nav__phone {
+    white-space: nowrap;
+}
+
+/* Botón hamburguesa (solo visible en móvil) */
+.site-nav__toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    padding: 4px;
+}
+
+.site-nav__toggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--color-white);
+    border-radius: 2px;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+@media (max-width: 860px) {
+    .site-nav__toggle {
+        display: flex;
+        order: 2;
+    }
+
+    .site-nav__contact {
+        order: 3;
+    }
+
+    .site-nav__links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        order: 4;
+    }
+
+    .site-nav__links.is-open {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-nav {
+        padding: 14px 18px;
+    }
+
+    .site-nav__contact {
+        gap: 10px;
+        font-size: 14px;
+    }
+}
