@@ -141,6 +141,25 @@ a{
     text-decoration: none;
 }
 
+.section-biblioteca{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.section-biblioteca--img{
+    display: flex;
+    border: 1px solid black;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px;
+    width: auto;
+    gap: 25px;
+}
+
 /* RESPONSIVE */
 @media (max-width: 700px) {
     .contact-layout {
