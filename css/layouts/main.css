@@ -110,6 +110,7 @@
     outline: 2px solid var(--color-primary);
 }
 
+
 /* CTA genérico */
 .cta-section {
     display: flex;
@@ -120,6 +121,24 @@
     background-color: var(--color-primary);
     color: var(--color-white);
     padding: 50px 24px;
+}
+
+.section--redes-sociales{
+    display: flex;
+    gap: 8px;
+}
+
+.site-footer--redes-sociales__icons{
+    display: flex;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 15px;
+    background-color: #D6097D;
+    color: white;;
+}
+
+a{
+    text-decoration: none;
 }
 
 /* RESPONSIVE */

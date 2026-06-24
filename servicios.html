@@ -32,7 +32,8 @@
             <a class="site-nav__link" href="index.html">Inicio</a>
             <a class="site-nav__link" href="quienes-somos.html">¿Quiénes somos?</a>
             <a class="site-nav__link is-active" href="servicios.html">Servicios</a>
-            <a class="site-nav__link" href="contacto.html">Contacto</a>
+            <a class="site-nav__link" href="portafolio.html">Portafolio</a>
+            <a class="site-nav__link is-active" href="contacto.html">Contacto</a>
         </div>
 
         <div class="site-nav__contact">
@@ -55,7 +56,7 @@
     </header>
 
     <main>
-        <section class="section section--bg-light">
+        <section class="section section--bg-light" style="display: flex; align-items: center;">
             <div class="section__title">
                 <p class="text-eyebrow">LO QUE HACEMOS</p>
                 <h2 class="section__title-h2">Servicios a tu medida</h2>
@@ -78,31 +79,42 @@
                 </div>
                 <div class="carousel-inner" style="height: fit-content;">
                     <div class="carousel-item active">
-                        <img src="img/servicios/Recurso 1@600x-100.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Gran Formato</h5>
-                            <p>Banners, vallas, lonas y rotulación exterior con acabados de alta resistencia.</p>
+                        <div class="service-card">
+                            <img class="cards-grid--img" src="img/servicios/Recurso 1@600x-100.jpg" alt="gran formato">
+                            <div class="card-grid__content">
+                                <p class="service-card__title">Gran Formato</p>
+                                <p>Banners, vallas, lonas y rotulación exterior con acabados de alta resistencia.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="service-card">
+                            <img class="cards-grid--img" src="img/servicios/Recurso 4@600x-100.jpg"
+                                alt="disenio grafico">
+                            <div class="card-grid__content">
+                                <p class="service-card__title">Diseño Gráfico</p>
+                                <p>Identidad de marca, logotipos y piezas publicitarias pensadas para tu negocio.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/servicios/Recurso 2@600x-100.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Rotulación</h5>
-                            <p>Rótulos para vehículos, fachadas y espacios comerciales hechos a medida.</p>
+                        <div class="service-card">
+                            <img class="cards-grid--img" src="img/servicios/Recurso 5@600x-100.jpg"
+                                alt="impresion digital">
+                            <div class="card-grid__content">
+                                <p class="service-card__title">Impresión Digital</p>
+                                <p>Volantes, brochures, tarjetas y material POP con entrega rápida.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/servicios/Recurso 5@600x-100.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Impresión Digital</h5>
-                            <p>Volantes, brochures, tarjetas y material POP con entrega rápida.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/servicios/Recurso 4@600x-100.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Diseño Gráfico</h5>
-                            <p>Identidad de marca, logotipos y piezas publicitarias pensadas para tu negocio.</p>
+                        <div class="service-card">
+                            <img class="cards-grid--img" src="img/servicios/Recurso 2@600x-100.jpg" alt="rotulacion">
+                            <div class="card-grid__content">
+                                <p class="service-card__title">Rotulación</p>
+                                <p>Rótulos para vehículos, fachadas y espacios comerciales hechos a medida.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -148,6 +160,7 @@
                     </div>
                 </div>
             </div>
+            <a class="third-button" href="portafolio.html" style="width: 100%;">Portafolio</a>
         </section>
 
         <section class="cta-section">
