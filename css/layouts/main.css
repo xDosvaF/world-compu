@@ -152,7 +152,6 @@ a{
 
 .section-biblioteca--img{
     display: flex;
-    border: 1px solid black;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 50px;
