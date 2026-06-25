@@ -164,7 +164,7 @@ a{
     .contact-layout {
         flex-direction: column;
     }
-    .cards-grid{
+    #cards-grid--services{
         display: none;
     }
     .prueba{
