@@ -49,6 +49,33 @@
     </header>
 
     <main>
+        <section class="section quick-contact">
+            <div class="quick-contact__title">
+                <p class="text-eyebrow">¿PREFIERES ALGO MÁS RÁPIDO?</p>
+                <h2 class="section__title-h2">Escríbenos directo</h2>
+            </div>
+            <div class="quick-contact__cards">
+                <a class="quick-contact__card quick-contact__card--whatsapp"
+                   href="https://wa.me/50251921221?text=Hola%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios"
+                   target="_blank" rel="noopener">
+                    <img src="img/redes-sociales/whatsapp (1).png" alt="WhatsApp">
+                    <div>
+                        <p class="quick-contact__card-title">WhatsApp</p>
+                        <p class="quick-contact__card-text">Respuesta inmediata · (502) 5192-1221</p>
+                    </div>
+                </a>
+                <a class="quick-contact__card quick-contact__card--facebook"
+                   href="https://www.facebook.com/worldcompuimpresion/?locale=es_LA"
+                   target="_blank" rel="noopener">
+                    <img src="img/redes-sociales/facebook.png" alt="Facebook">
+                    <div>
+                        <p class="quick-contact__card-title">Facebook</p>
+                        <p class="quick-contact__card-text">Síguenos y mira nuestros trabajos</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
         <section class="section section--bg-light">
             <div class="contact-layout">
                 <div class="contact-info">
@@ -71,14 +98,14 @@
                     </div>
                 </div>
 
-                <form class="contact-form" action="#" method="post">
+                <form class="contact-form" id="form-contacto">
                     <div class="contact-form__field">
                         <label for="nombre">Nombre</label>
                         <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
                     </div>
                     <div class="contact-form__field">
                         <label for="email">Correo electrónico</label>
-                        <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                        <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com">
                     </div>
                     <div class="contact-form__field">
                         <label for="telefono">Teléfono</label>
@@ -88,7 +115,11 @@
                         <label for="mensaje">Mensaje</label>
                         <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos qué necesitas" required></textarea>
                     </div>
-                    <button class="primary-button" type="submit">Enviar mensaje</button>
+                    <button class="primary-button contact-form__whatsapp-btn" type="submit">
+                        <img src="img/redes-sociales/whatsapp (1).png" alt="" class="contact-form__whatsapp-icon">
+                        Enviar por WhatsApp
+                    </button>
+                    <p class="contact-form__hint">Al enviar, se abrirá WhatsApp con tu mensaje ya escrito.</p>
                 </form>
             </div>
         </section>

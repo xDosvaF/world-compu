@@ -1,8 +1,62 @@
-*{
-    padding: 0;
-    margin: 0;
+/* Muro estilo Pinterest (masonry con CSS columns) */
+.section-biblioteca {
+    padding-top: var(--gap-lg);
+    padding-bottom: var(--gap-lg);
+    background-color: var(--color-bg-lighter);
 }
 
-.biblioteca-img{
-    width: 250px;
+.biblioteca-masonry {
+    column-count: 4;
+    column-gap: 18px;
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+}
+
+.biblioteca-item {
+    break-inside: avoid;
+    margin-bottom: 18px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.biblioteca-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.biblioteca-img {
+    width: 100%;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.biblioteca-item:hover .biblioteca-img {
+    transform: scale(1.04);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+    .biblioteca-masonry {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 720px) {
+    .biblioteca-masonry {
+        column-count: 2;
+        column-gap: 12px;
+    }
+
+    .biblioteca-item {
+        margin-bottom: 12px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    .biblioteca-masonry {
+        column-count: 1;
+    }
 }

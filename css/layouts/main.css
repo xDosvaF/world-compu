@@ -47,6 +47,81 @@
     border-radius: 12px;
 }
 
+/* CONTACTO RÁPIDO (WhatsApp / Facebook) */
+.quick-contact__title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.quick-contact__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.quick-contact__card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: var(--color-text);
+    background: var(--color-white);
+    border-radius: 18px;
+    padding: 20px 28px;
+    min-width: 280px;
+    flex: 1;
+    max-width: 360px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-left: 5px solid var(--color-primary);
+}
+
+.quick-contact__card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.quick-contact__card img {
+    height: 42px;
+    width: 42px;
+    object-fit: contain;
+}
+
+.quick-contact__card-title {
+    font-weight: bold;
+    font-size: 17px;
+    color: var(--color-primary);
+}
+
+.quick-contact__card-text {
+    font-size: 14px;
+    color: var(--color-text);
+}
+
+/* Botón enviar por WhatsApp dentro del formulario */
+.contact-form__whatsapp-btn {
+    background-color: #25D366;
+    color: var(--color-white);
+    gap: 10px;
+    width: 100%;
+}
+
+.contact-form__whatsapp-icon {
+    height: 22px;
+    filter: brightness(0) invert(1);
+}
+
+.contact-form__hint {
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+}
+
 /* FORMULARIO DE CONTACTO */
 .contact-layout {
     display: flex;
